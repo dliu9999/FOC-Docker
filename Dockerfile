@@ -7,6 +7,7 @@ USER root
 
 # install packages
 RUN pip install pytrends twint pageviewapi wikipedia
+RUN pip install pandas==1.2.3
 
 # change back to notebook user
 COPY /run_jupyter.sh /
